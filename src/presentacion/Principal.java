@@ -15,10 +15,10 @@ public class Principal {
 	private void Caso1() {
 		try {
 			Hombre[] hombres=new Hombre[2];
-			hombres[0]=new Hombre(75,176,32);
-			hombres[1]=new Hombre(50,165,22);
-			System.out.println("tmb del hombre 1 : "+ hombres[0].calcular_tmb());
-			System.out.println("tmb del hombre 2 : "+ hombres[1].calcular_tmb());
+			hombres[0]=new Hombre("juan",75,176,32);
+			hombres[1]=new Hombre("sebastian",50,165,22);
+			System.out.println("tmb de"+hombres[0].get_name()+" : "+ hombres[0].calcular_tmb());
+			System.out.println("tmb de"+hombres[1].get_name()+" : "+ hombres[1].calcular_tmb());
 		}
 		catch (Exception e) {
 			System.out.println(e);
@@ -27,8 +27,8 @@ public class Principal {
 	}
 	private void Caso2() {
 		try {
-			Mujer lisa = new Mujer(60,139,25);
-			System.out.println("tmb de lisa : "+ lisa.calcular_tmb());
+			Mujer muj = new Mujer("lisa",60,139,25);
+			System.out.println("tmb de"+muj.get_name()+" : "+ muj.calcular_tmb());
 		}
 		catch (Exception e) {
 			System.out.println(e);
@@ -36,8 +36,8 @@ public class Principal {
 	}
 	private void Caso3() {
 		try {
-			Hombre tomas = new Hombre(60,163,14);
-			System.out.println("tmb de tomas : "+ tomas.calcular_tmb());
+			Hombre hom = new Hombre("tomas",60,163,14);
+			System.out.println("tmb de "+ hom.get_name()+" : "+hom.calcular_tmb());
 		}
 		catch (Exception e) {
 			System.out.println(e);
@@ -45,10 +45,10 @@ public class Principal {
 		}
 	private void Caso4() {
 		try {
-			Mujer emma = new Mujer(60,165,25);
-			Hombre john= new Hombre(85,180,76);
-			System.out.println("tmb de emma : "+ emma.calcular_tmb());
-			System.out.println("tmb de John : "+ john.calcular_tmb());
+			Mujer muj = new Mujer("emma",60,165,25);
+			Hombre hom= new Hombre("pablo",85,180,76);
+			System.out.println("tmb de "+muj.get_name()+ " : "+ muj.calcular_tmb());
+			System.out.println("tmb de "+ hom.get_name()+" : "+hom.calcular_tmb());
 		}
 		catch (Exception e) {
 			System.out.println(e);
